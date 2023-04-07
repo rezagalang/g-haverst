@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-secondary {
+        @apply bg-secondary inline-block cursor-pointer border-2 border-secondary hover:bg-transparent hover:text-secondary duration-300;
+    }
+    .bg-gradient-primary {
+        @apply bg-gradient-to-br from-primary to-boldPrimary rounded-xl shadow-xl py-12;
+    }
+    .grid-4 {
+        @apply grid grid-cols-4 gap-6;
+    }
+}

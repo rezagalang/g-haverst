@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - G-Haverst</title>
+    <link href="../public/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body class="font-montserrat">
+    <!-- Header -->
+    <header>
+        <div class="container mx-auto">
+            <div class="flex justify-between my-2 border-slate-200 border-b-[1.5px] pb-1">
+                <div>
+                    <i class="bi bi-geo-alt"></i>
+                    <span class="font-lato max-sm:text-xs">Jl. Pahlawan No.50 Surabaya, Indonesia</span>
+                </div>
+                <div class="flex [&>i]:ml-6">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+            <nav class="flex justify-between my-4">
+                <ul class="flex items-center [&>li>a:hover]:text-secondary [&>li>a:hover]:duration-300 [&>li]:mr-6 [&>img]:mr-10 max-lg:[&>li]:hidden">
+                    <button class="text-2xl mr-6 lg:hidden" onclick="Open()">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <img src="../public/img/logo.png">
+                    <li><a href="../views/index.html">Home</a></li>
+                    <li><a href="../views/product.html" class="text-secondary hover:opacity-50">Shop</a></li>
+                    <li><a href="../views/about-us.html">About us</a></li>
+                    <li><a href="../views/contact-us.html">Contact us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="flex items-center [&>*]:ml-8 text-lg max-lg:[&>i:first-child]:hidden">
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-cart3"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <div class="sidebar fixed top-0 bottom-0 -left-80 lg:hidden bg-blackSoft w-80 shadow-md z-50 p-4 overflow-y-auto">
+        <div class="flex justify-between text-white items-center">
+            <img src="../public/img/logo.png" alt="Logo" class="max-lg:mr-8">
+            <div class="cursor-pointer px-4" onclick="Open()">
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+        <div class="py-2">
+            <ul class="text-white [&>li]:my-4 [&>li]:pl-4 [&>li]:py-3">
+                <li class="rounded-lg bg-slate-400 cursor-pointer transition-all duration-300"><i class="bi bi-house-door-fill mr-4"></i>Home</li>
+                <li class="hover-side"><i class="bi bi-cart-check-fill mr-4"></i>Shop</li>
+                <li class="hover-side"><i class="bi bi-question-circle-fill mr-4"></i>About Us</li>
+                <li class="hover-side"><i class="bi bi-telephone-inbound-fill mr-4"></i>Contact Us</li>
+                <li class="hover-side"><i class="bi bi-front mr-4"></i>Blog</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <section>
+        <div class="container mx-auto">
+            <div class="flex justify-between pt-20">
+                <div class="w-1/3">
+                    <h3 class="font-semibold text-2xl mb-4">Product Categories</h3>
+                    <div class="mb-6 [&>*]:flex [&>*]:mb-4 [&>*>input]:peer [&>*>input]:border [&>*>input]:rounded-sm [&>*>input]:h-6 [&>*>input]:w-6 [&>*>input]:focus:outline-none [&>*>input]:checked:bg-gray-800 [&>*>input]:relative [&>*>input]:mr-4">
+                        <div>
+                            <input type="checkbox" class="">
+                            <span>Vegetabels</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="">
+                            <span>Fruits</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="">
+                            <span>Meat</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="">
+                            <span>Seafood</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="">
+                            <span>Seassoning</span>
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-xl mb-4">Filter by price</h4>
+                    <div class="flex justify-between items-center w-[90%]">
+                        <h5 class="font-semibold text-lg">Range : </h5>
+                        <button class="bg-secondary text-white rounded-sm py-2 px-8">Filter</button>
+                    </div>
+                </div>
+                <div class="w-2/3">
+                    <div class="flex justify-between mb-6">
+                        <span>Showing 1 - 8 of 99 Result</span>
+                        <span>Sort by latest<i class="bi bi-chevron-down ml-2"></i></span>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 pb-16 max-xl:gap-4 max-md:grid-cols-3 max-sm:grid-cols-2 max-[320px]:grid-cols-1">
+                        <div class="bg-white rounded-xl border-2 py-8 px-4">
+                            <img src="../public/img/tomato.png" class="mx-auto">
+                            <h4 class="font-bold text-sm mt-10">Tomato Fresh - Lorem Ipsum</h4>
+                            <div class="text-secondary text-xs my-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-4 mt-1">Rp 20.000</p>
+                            <a href="#" class="btn-secondary text-white text-center rounded-lg py-2 w-full">Add To Cart</a>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 py-9 px-4">
+                            <img src="../public/img/potato.png" class="mx-auto my-7 max-xl:mt-10 max-xl:mb-11">
+                            <h4 class="font-bold text-sm mt-10">Potato Fresh - Lorem Ipsum</h4>
+                            <div class="text-secondary text-xs my-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-4 mt-1">Rp 20.000</p>
+                            <a href="#" class="btn-secondary text-white text-center rounded-lg py-2 w-full">Add To Cart</a>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 py-8 px-4">
+                            <img src="../public/img/eggplant.png" class="mx-auto my-6">
+                            <h4 class="font-bold text-sm mt-10">Eggplant Fresh - Lorem Ipsum</h4>
+                            <div class="text-secondary text-xs my-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-4 mt-1">Rp 20.000</p>
+                            <a href="#" class="btn-secondary text-white text-center rounded-lg py-2 w-full">Add To Cart</a>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 py-8 px-4">
+                            <img src="../public/img/pomegranate.png" class="mx-auto mt-10 mb-11 max-xl:my-[50px]">
+                            <h4 class="font-bold text-sm mt-10">Pomegranate - Lorem Ipsum</h4>
+                            <div class="text-secondary text-xs my-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-4 mt-1">Rp 20.000</p>
+                            <a href="#" class="btn-secondary text-white text-center rounded-lg py-2 w-full">Add To Cart</a>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 py-8 px-4">
+                            <img src="../public/img/papaya.png" class="mx-auto my-4 max-xl:my-[26px]">
+                            <h4 class="font-bold text-sm mt-[30px]">Papaya Fresh - Lorem Ipsum</h4>
+                            <div class="text-secondary text-xs my-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-4 mt-1">Rp 20.000</p>
+                            <a href="#" class="btn-secondary text-white text-center rounded-lg py-2 w-full">Add To Cart</a>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 py-14 px-4">
+                            <img src="../public/img/grapes.png" class="mx-auto my-6">
+                            <h4 class="font-bold text-sm mt-10">Tomato Fresh - Lorem Ipsum</h4>
+                            <div class="text-secondary text-xs my-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-4 mt-1">Rp 20.000</p>
+                            <a href="#" class="btn-secondary text-white text- unded-lg py2 w-full">Add To Cart</a>
+                        </div>        
+                    </div>     
+                    <nav class="pb-16">
+                        <ul class="flex justify-center">
+                          <li>
+                            <a class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-blue-gray-100 bg-transparent p-0 text-sm text-blue-gray-500 transition duration- ase-in-out:bg-light-300" href="#" aria-label="Previous">
+                              <span class="material-icons text-sm"><i class="bi bi-chevron-left"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="mx-2 flex h-9 w-9 items-center justify-center rounded-full bg-secondary p-0 text-sm text-white shadow-md transition duration-150 ease-in-out" href="#">
+                              1
+                            </a>
+                          </li>
+                          <li>
+                            <a class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-blue-gray-100 bg-transparent p-0 text-sm text-blue-gray-500 transition duration-150 ease-in-out hover:bg-light-300" href="#">
+                              2
+                            </a>
+                          </li>
+                          <li>
+                            <a class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-blue-gray-100 bg-transparent p-0 text-sm text-blue-gray-500 transition duration-150 ease-in-out hover:bg-light-300" href="#">
+                              3
+                            </a>
+                          </li>
+                          <li>
+                            <a class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-blue-gray-100 bg-transparent p-0 text-sm text-blue-gray-500 transition duration-150 ease-in-out hover:bg-light-300" href="#" aria-label="Next">
+                              <span class="material-icons text-sm"><i class="bi bi-chevron-right"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                    </nav>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center my-16 max-md:flex-col max-sm:text-xs">
+                <h2 class="text-primary text-4xl font-bold max-md:mb-6 max-sm:text-2xl">Subscribe for Latest Offers</h2>
+                <form action="#" class="flex items-center w-[440px] relative max-sm:w-[240px]">
+                    <input type="email" class="p-5 w-full border-2 rounded-md focus:border-primary focus:outline-none max-sm:p-3" placeholder="Enter Your Email">
+                    <button class="btn-secondary text-white py-3 px-6 rounded-md absolute right-4 max-sm:py-1 max-sm:px-2">Subscribe</button>
+                </form>
+            </div>
+            <div class="flex justify-between max-w-[900px] my-12 max-md:flex-col max-sm:text-xs">
+                <div class="lg:max-w-[463px] md:max-lg:max-w-xs">
+                    <img src="../public/img/logo-footer.png">
+                    <p class="font-lato text-paraSilver mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra vel facilisis.</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-2xl mb-4 max-md:mt-8">Menu</h2>
+                    <ul class="[&>*]:font-lato [&>*]:mb-4 text-paraSilver">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-2xl mb-4">Product</h2>
+                    <ul class="[&>*]:font-lato [&>*]:mb-4 text-paraSilver">
+                        <li>Vegetables</li>
+                        <li>Fruits</li>
+                        <li>Meats & SeaFood</li>
+                        <li>Seassoning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between border-t-[1.5px] py-4 max-md:flex-col-reverse max-md:text-center">
+                <p class="font-lato text-paraSilver max-sm:text-xs">@ 2023 G-Harvest. All Right Reserved.</p>
+                <div class="flex [&>div]:self-center [&>div]:ml-4 max-md:justify-center max-md:mb-4">
+                    <div>
+                        <img src="../public/img/ovo.png">
+                    </div>
+                    <div>
+                        <img src="../public/img/dana.png">
+                    </div>
+                    <div>
+                        <img src="../public/img/ovo.png">
+                    </div>
+                    <div>
+                        <img src="../public/img/dana.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- To Top -->
+    <a class="w-12 h-12 bg-secondary rounded-full text-2xl fixed bottom-5 right-5 cursor-pointer animate-bounce z-50 hidden text-white hover:bg-amber-600 transition-all duration-300" id="toTop">
+        <div class="ml-3 mt-2">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </a>
+    <!-- End To Top -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

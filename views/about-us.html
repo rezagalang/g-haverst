@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - G-Haverst</title>
+    <link href="../public/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body class="font-montserrat">
+    <!-- Header -->
+    <header>
+        <div class="container mx-auto">
+            <div class="flex justify-between my-2 border-slate-200 border-b-[1.5px] pb-1">
+                <div>
+                    <i class="bi bi-geo-alt"></i>
+                    <span class="font-lato max-sm:text-xs">Jl. Pahlawan No.50 Surabaya, Indonesia</span>
+                </div>
+                <div class="flex [&>i]:ml-6">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+            <nav class="flex justify-between my-4">
+                <ul class="flex items-center [&>li>a:hover]:text-secondary [&>li>a:hover]:duration-300 [&>li]:mr-6 [&>img]:mr-10 max-lg:[&>li]:hidden">
+                    <button class="text-2xl mr-6 lg:hidden" onclick="Open()">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <img src="../public/img/logo.png">
+                    <li><a href="../views/index.html">Home</a></li>
+                    <li><a href="../views/product.html">Shop</a></li>
+                    <li><a href="../views/about-us.html" class="text-secondary hover:opacity-50">About us</a></li>
+                    <li><a href="../views/contact-us.html">Contact us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="flex items-center [&>*]:ml-8 text-lg max-lg:[&>i:first-child]:hidden">
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-cart3"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <div class="sidebar fixed top-0 bottom-0 -left-80 lg:hidden bg-blackSoft w-80 shadow-md z-50 p-4 overflow-y-auto">
+        <div class="flex justify-between text-white items-center">
+            <img src="../public/img/logo.png" alt="Logo" class="max-lg:mr-8">
+            <div class="cursor-pointer px-4" onclick="Open()">
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+        <div class="py-2">
+            <ul class="text-white [&>li]:my-4 [&>li]:pl-4 [&>li]:py-3">
+                <li class="rounded-lg bg-slate-400 cursor-pointer transition-all duration-300"><i class="bi bi-house-door-fill mr-4"></i>Home</li>
+                <li class="hover-side"><i class="bi bi-cart-check-fill mr-4"></i>Shop</li>
+                <li class="hover-side"><i class="bi bi-question-circle-fill mr-4"></i>About Us</li>
+                <li class="hover-side"><i class="bi bi-telephone-inbound-fill mr-4"></i>Contact Us</li>
+                <li class="hover-side"><i class="bi bi-front mr-4"></i>Blog</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <section class="bg-silver">
+        <div class="container mx-auto">
+            <div class="flex justify-between lg:items-end py-16 max-lg:flex-col-reverse">
+                <div class="max-lg:mt-8">
+                    <img src="../public/img/contact-us.png" class="lg:max-xl:scale-[.8]">
+                </div>
+                <div class="xl:max-w-[520px] lg:max-xl:max-w-[360px] mb-2">
+                    <div class="flex">
+                        <div class="border-b-2 border-secondary w-8 mb-[10px] mr-3"></div>
+                        <h6 class="text-primary">About us</h6>
+                        <div class="border-b-2 border-secondary w-8 mb-[10px] ml-3"></div>
+                    </div>
+                    <h2 class="font-semibold text-3xl mb-4">G- Harvest</h2>
+                    <p class="font-lato text-paraSilver lg:max-xl:text-sm mb-2">G-harvest is a leading provider of fresh, high-quality vegetables sourced from trusted farmers. Our commitment to quality and sustainability is at the core of everything we do.</p>
+                    <p class="font-lato text-paraSilver lg:max-xl:text-sm">Our vegetables are carefully selected and harvested at the peak of their freshness to ensure maximum flavor and nutrition. We work with local farmers who share our passion for sustainable agriculture and who use eco-friendly growing methods to minimize environmental impact.
+                    At G-harvest, we are dedicated to delivering the freshest vegetables to our customers. We have a rigorous quality control process in place to ensure that every product meets our high standards. Our team of experts inspects every vegetable before it is packaged and shipped to ensure that it is free of defects and ready to be enjoyed.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex border-2 border-primary rounded-xl p-4 w-1/2 mr-3">
+                    <div class="m-auto">
+                        <img src="../public/img/icon/vision.png">
+                    </div>
+                    <div class="max-w-[400px]">
+                        <h3 class="text-2xl font-semibold mb-1">Vision</h3>
+                        <p class="font-lato text-paraSilver">To create a healthier and more sustainable food system by providing fresh, high-quality vegetables to consumers while supporting sustainable agriculture practices and promoting social and environmental responsibility.</p>
+                    </div>
+                </div>
+                <div class="flex border-2 border-primary rounded-xl p-4 w-1/2 ml-3">
+                    <div class="m-auto">
+                        <img src="../public/img/icon/mission.png">
+                    </div>
+                    <div class="max-w-[400px]">
+                        <h3 class="text-2xl font-semibold mb-1">Vision</h3>
+                        <p class="font-lato text-paraSilver">Our mission is to provide consumers with the freshest, highest quality vegetables while promoting sustainable agriculture practices that protect the environment and support local communities..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-silver">
+        <div class="flex relative pt-20 pb-36">
+            <div class="container mx-auto">
+                <div class="w-2/5 max-[1366px]:pr-16">
+                    <div class="flex">
+                        <div class="border-b-2 border-secondary w-8 mb-[10px] mr-3"></div>
+                        <h6 class="text-primary">Our goals</h6>
+                        <div class="border-b-2 border-secondary w-8 mb-[10px] ml-3"></div>
+                    </div>
+                    <h2 class="font-semibold text-3xl mb-4">The goals we want to achieve</h2>
+                    <ol class="list-decimal text-paraSilver font-lato [&>li]:leading-7 ml-4">
+                        <li>To provide fresh, high-quality vegetables to consumers while maintaining a commitment to sustainability and environmentally-friendly practices.</li>
+                        <li>To work with local farmers and suppliers to support the growth and development of sustainable agriculture in the region.</li>
+                        <li>To build strong relationships with customers and partners by providing exceptional service, quality products, and fair pricing.</li>
+                        <li>To expand our product offerings and distribution channels to reach a wider range of customers and increase our impact on the local food system.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="absolute right-0">
+                <img src="../public/img/our-goals.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center my-16 max-md:flex-col max-sm:text-xs">
+                <h2 class="text-primary text-4xl font-bold max-md:mb-6 max-sm:text-2xl">Subscribe for Latest Offers</h2>
+                <form action="#" class="flex items-center w-[440px] relative max-sm:w-[240px]">
+                    <input type="email" class="p-5 w-full border-2 rounded-md focus:border-primary focus:outline-none max-sm:p-3" placeholder="Enter Your Email">
+                    <button class="btn-secondary text-white py-3 px-6 rounded-md absolute right-4 max-sm:py-1 max-sm:px-2">Subscribe</button>
+                </form>
+            </div>
+            <div class="flex justify-between max-w-[900px] my-12 max-md:flex-col max-sm:text-xs">
+                <div class="lg:max-w-[463px] md:max-lg:max-w-xs">
+                    <img src="../public/img/logo-footer.png">
+                    <p class="font-lato text-paraSilver mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra vel facilisis.</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-2xl mb-4 max-md:mt-8">Menu</h2>
+                    <ul class="[&>*]:font-lato [&>*]:mb-4 text-paraSilver">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-2xl mb-4">Product</h2>
+                    <ul class="[&>*]:font-lato [&>*]:mb-4 text-paraSilver">
+                        <li>Vegetables</li>
+                        <li>Fruits</li>
+                        <li>Meats & SeaFood</li>
+                        <li>Seassoning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between border-t-[1.5px] py-4 max-md:flex-col-reverse max-md:text-center">
+                <p class="font-lato text-paraSilver max-sm:text-xs">@ 2023 G-Harvest. All Right Reserved.</p>
+                <div class="flex [&>div]:self-center [&>div]:ml-4 max-md:justify-center max-md:mb-4">
+                    <div>
+                        <img src="../public/img/ovo.png">
+                    </div>
+                    <div>
+                        <img src="../public/img/dana.png">
+                    </div>
+                    <div>
+                        <img src="../public/img/ovo.png">
+                    </div>
+                    <div>
+                        <img src="../public/img/dana.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- To Top -->
+    <a class="w-12 h-12 bg-secondary rounded-full text-2xl fixed bottom-5 right-5 cursor-pointer animate-bounce z-50 hidden text-white hover:bg-amber-600 transition-all duration-300" id="toTop">
+        <div class="ml-3 mt-2">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </a>
+    <!-- End To Top -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>
